@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>providers</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>providers_id</th>
+                <th>first_name</th>
+                <th>last_name</th>
+                <th>provider_speciality</th>
+
+        </tr>
+
+    </thead>
+    <tbody>
+        <% results.forEach(patient => {%>
+            <tr>
+                <td><%= providers.providers_id %></td>
+                <td><%= providers.first_name %></td>
+                <td><%= providers.last_name %></td>
+                <td><%= providers.provider_speciality %></td>
+            </tr>
+        <% }); %>
+    </tbody>
+    </table>
+</body>
+</html>
